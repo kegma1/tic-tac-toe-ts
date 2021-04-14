@@ -98,15 +98,15 @@ const main = (gameState: gameState): void => {
       console.clear();
       printBoard(newGameState.board);
       console.log(`${swapPlayers(newGameState.player)} has won!`);
-      prompt("press any enter to continue");
+      prompt("press enter to continue");
       return;
     } else if (newGameState.stateOfGame === "draw") {
       console.clear();
       printBoard(newGameState.board);
       console.log("its a draw");
-      prompt("press any enter to continue");
+      prompt("press enter to continue");
       return;
-    }
+    } else throw "somtin wong"
   } catch (error) {
     console.log(error);
     main(gameState);
