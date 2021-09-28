@@ -68,7 +68,7 @@ const swapPlayers = (player: piece): piece => {
 
 const printBoard = <T>(b: board<T>): void => {
   console.log(
-    `${b[0][0]}|${b[0][1]}|${b[0][2]}\n-+-+-\n${b[1][0]}|${b[1][1]}|${b[1][2]}\n-+-+-\n${b[2][0]}|${b[2][1]}|${b[2][2]}`
+    `${b[2][0]}|${b[2][1]}|${b[2][2]}\n-+-+-\n${b[1][0]}|${b[1][1]}|${b[1][2]}\n-+-+-\n${b[0][0]}|${b[0][1]}|${b[0][2]}`
   );
 };
 
@@ -106,7 +106,7 @@ const main = (gameState: gameState): void => {
       console.log("its a draw");
       prompt("press enter to continue");
       return;
-    } else throw "somtin wong"
+    } else throw "somtin wong";
   } catch (error) {
     console.log(error);
     main(gameState);
