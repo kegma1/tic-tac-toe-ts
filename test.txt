@@ -1,1 +1,33 @@
-dette er en test
+Wrong:
+
+if (condition) {
+	something;
+} else {
+	something;
+}
+
+or:
+
+if (condition)
+{
+	something
+}
+else
+{
+	something;
+}
+
+--------------------------------------------------------
+
+Correct:
+
+if (condition) {
+	something;
+}
+else {
+	something;
+}
+
+-------------------------------------------------------
+
+Tabs should be at 4 tabs NOT spaces, spaces is for gays :)
